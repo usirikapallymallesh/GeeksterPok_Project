@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- pre loader -->
+    <div class="preLoader">
+      <img src="./priloader1.gif" alt="" height="70px" width="70px" />
+    </div>
+
     <div id="header">
       <h1>Geekpok</h1>
       <input type="text" id="search" />
@@ -32,5 +37,11 @@
       </div>
     </div>
   </div> -->
+    <script>
+      window.addEventListener("load", () => {
+        let preloader = document.querySelector(".preLoader");
+        preloader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
